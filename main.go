@@ -9,6 +9,6 @@ func main() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprint(w, "ok")
 	})
-	fmt.Println("Listening on :8080")
-	http.ListenAndServe(":8080", nil)
+	fmt.Println("Listening on :80")
+	http.ListenAndServe(":80", nil)
 }
